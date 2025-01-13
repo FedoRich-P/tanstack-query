@@ -1,0 +1,32 @@
+{
+  "name": "tanstack-query-paromov",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm run dev:*\"",
+    "dev:server": "json-server db.json",
+    "dev:client": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@tanstack/router-devtools": "^1.95.5",
+    "@tanstack/router-plugin": "^1.95.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "prettierrc": "0.0.0-5",
+    "vite": "^6.0.3"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.95.5",
+    "D": "^1.0.0",
+    "concurrently": "^9.1.2",
+    "json-server": "1.0.0-beta.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
+    "uuid": "^11.0.5"
+  }
+}

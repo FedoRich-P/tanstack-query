@@ -1,0 +1,54 @@
+{
+  "todosList": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "title": "Купить молоко",
+      "done": false
+    },
+    {
+      "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "title": "Записаться на курсы",
+      "done": true
+    },
+    {
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "title": "Позвонить другу",
+      "done": false
+    },
+    {
+      "id": "c9bf9e57-1685-4c89-bafb-ff5af830be8a",
+      "title": "Прочитать книгу",
+      "done": false
+    },
+    {
+      "id": "3e8f8c1d-2a5e-4b5d-8c5a-6f7b8e9f0a1b",
+      "title": "Сделать зарядку",
+      "done": true
+    },
+    {
+      "id": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+      "title": "Написать отчет",
+      "done": false
+    },
+    {
+      "id": "02b5c9f0-6a1b-4b5d-8c5a-6f7b8e9f0a1b",
+      "title": "Починить кран",
+      "done": false
+    },
+    {
+      "id": "123e4567-e89b-12d3-a456-426614174000",
+      "title": "Заплатить за интернет",
+      "done": true
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "title": "Сходить в магазин",
+      "done": false
+    },
+    {
+      "id": "b3ba8a0a-1a2b-3c4d-5e6f-7g8h9i0j1k2l",
+      "title": "Подготовить презентацию",
+      "done": false
+    }
+  ]
+}
