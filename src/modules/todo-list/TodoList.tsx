@@ -7,15 +7,17 @@ type Props = {};
 export const TodoList = (props: Props) => {
     const [page, setPage] = useState(1)
 
-    const {data, error, isLoading} = useQuery({
-        queryKey: ["tasks, list"],
-        queryFn: todoListApi.getLogoList
+    const {data: todoItems} = useQuery({
+        queryKey: ["tasks", "list", {page}],
+        queryFn: (meta) => todoListApi.getLogoList({page}, meta)
     })
+
+    const pagesCount =  todoItems?.items
 
     return (
         <div className={styles.todoList}>
             <h1>Todo List</h1>
-            {data?.map((todo) => (
+            { todoItems && todoItems?.data.map((todo) => (
                 <div key={todo.id}
                      className={styles.todoItem}>
                     <input type="checkbox"
@@ -36,7 +38,7 @@ export const TodoList = (props: Props) => {
                 <button onClick={() => setPage(p => Math.max(p - 1, 1))}
                         className={styles.pagButton}>Prev
                 </button>
-                <button onClick={() =>  setPage(p => (page >= p) ? p + 1 : p)}
+                <button onClick={() =>  setPage(p => Math.min(p + 1, pagesCount ? pagesCount : 1))}
                         className={styles.pagButton}>Next
                 </button>
             </div>
